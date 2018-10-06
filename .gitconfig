@@ -1,0 +1,35 @@
+[user]
+	name = Dídac Sabatés
+	email = sabatesduran@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg3 = log --graph --pretty=format:'%C(bold green)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative --all
+    lg = log --graph --decorate --date=relative --color=auto --stat
+    lgp = git log --graph --full-history --all --color --date=short --pretty=format:"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset"
+	dt = difftool
+	df = diff --cached
+	cp = cherry-pick
+	st = status -sb
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	last = log -1 --stat
+	unstage = reset HEAD --
+    timeline = log --oneline --graph --decorate
+    ll = pull
+[i18n]
+	filesEncoding = utf-8
+[push]
+	default = simple
+[github]
+	user = sabatesduran
+	token = 007c1aefbf04f0e03ec5bd52ea0657c72013dde7
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

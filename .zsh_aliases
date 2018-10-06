@@ -1,0 +1,30 @@
+# ZSH
+alias reload="source ~/.zshrc"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ipl="hostname -I"
+
+# System utilities
+alias sysupgrade='sudo apt-get update && sudo apt-get dist-upgrade -y  && sudo apt-get autoremove -y && sudo apt-get autoclean && sudo updatedb'
+
+# Ruby & Rails
+alias serve='ruby -run -e httpd . -p 8000'
+alias ras='rails s -b 0.0.0.0'
+alias rr='rails routes'
+alias rac='rails c'
+alias raredb='rails db:drop db:create db:migrate db:seed'
+alias be='bundle exec'
+alias bi='bundle install'
+
+# Yarn
+alias ys='yarn start'
+
+# Git
+alias gac='git add . && git ci'
+alias gacp='git add . && git ci && git push'
+
+# Project folders
+alias cdc='cd ~/code/'
+alias cdcs='cd ~/code/sabatesduran/'
+alias cdhrbs='cd ~/code/hrbs/monolith'
