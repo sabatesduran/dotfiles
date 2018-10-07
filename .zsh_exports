@@ -1,7 +1,7 @@
 # Ruby
-export PATH="/usr/local/opt/rbenv/bin:$PATH"
+export PATH="/opt/rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="/usr/local/opt/rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="/opt/rbenv/plugins/ruby-build/bin:$PATH"
 
 # Android
 export ANDROID_HOME=/home/didac/SDKs/android/sdk

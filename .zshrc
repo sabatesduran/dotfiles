@@ -7,9 +7,6 @@ export ZSH=/home/didac/.oh-my-zsh
 # ZSH theme to display.
 ZSH_THEME="spaceship"
 
-# Enable command auto-correction.
-ENABLE_CORRECTION="true"
-
 # Display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
