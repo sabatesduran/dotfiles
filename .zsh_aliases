@@ -24,6 +24,11 @@ alias ys='yarn start'
 alias gac='git add . && git ci'
 alias gacp='git add . && git ci && git push'
 
+# NordVPN
+alias vpnes='nordvpn connect es'
+alias vpnnl='nordvpn connect nl'
+alias vpndis='nordvpn disconnect'
+
 # Project folders
 alias cdc='cd ~/code/'
 alias cdcs='cd ~/code/sabatesduran/'
