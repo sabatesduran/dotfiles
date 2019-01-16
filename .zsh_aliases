@@ -6,7 +6,10 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ipl="hostname -I"
 
 # System utilities
-alias sysupgrade='sudo apt-get update && sudo apt-get dist-upgrade -y  && sudo apt-get autoremove -y && sudo apt-get autoclean && sudo updatedb'
+alias sysupgrade='sudo apt update && sudo apt dist-upgrade -y  && sudo apt autoremove -y && sudo apt autoclean && sudo updatedb'
+alias restart_audio='pulseaudio -k && sudo alsa force-reload'
+alias restart_pulseaudio='sudo killall pulseaudio; rm -rf ~/.config/pulse/*'
+alias change_brightness_hdmi='f() { xrandr --output HDMI-2 --brightness $1. };f'
 
 # Ruby & Rails
 alias serve='ruby -run -e httpd . -p 8000'
