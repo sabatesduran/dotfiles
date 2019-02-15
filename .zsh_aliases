@@ -36,3 +36,6 @@ alias vpndis='nordvpn disconnect'
 alias cdc='cd ~/code/'
 alias cdcs='cd ~/code/sabatesduran/'
 alias cdhrbs='cd ~/code/hrbs/monolith'
+
+# Apps
+alias updateStation='sudo wget -P /opt/Station.AppImage "https://dl.getstation.com/download/linux_64?filetype=AppImage" && sudo chmod +x /opt/Station.AppImage'
