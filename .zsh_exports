@@ -12,3 +12,7 @@ PATH=/usr/local/bin:$PATH
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
     source /etc/profile.d/vte.sh
 fi
+
+# WRK (https://github.com/wg/wrk)
+export PATH=$PATH:/opt/wrk
+export GOOGLE_APPLICATION_CREDENTIALS="/home/didac/code/hrbs/rpi-touching-experience/credentials.json"

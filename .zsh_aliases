@@ -34,8 +34,11 @@ alias vpndis='nordvpn disconnect'
 
 # Project folders
 alias cdc='cd ~/code/'
+alias cdv='cd ~/code/verse/'
 alias cdcs='cd ~/code/sabatesduran/'
 alias cdhrbs='cd ~/code/hrbs/monolith'
 
 # Apps
 alias updateStation='sudo wget -O /opt/Station.AppImage "https://dl.getstation.com/download/linux_64?filetype=AppImage" && sudo chmod +x /opt/Station.AppImage'
+alias updateHyper='sudo wget -O /opt/hyper.AppImage "https://releases.hyper.is/download/AppImage" && sudo chmod +x /opt/hyper.AppImage'
+alias prp="pipenv run python"
